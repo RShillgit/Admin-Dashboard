@@ -10,37 +10,49 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <a><img>Dashboard</a>
+            <a><img src="static/alien.png">Dashboard</a>
             <ul>
-                <li><a><img>Home</a></li>
-                <li><a><img>Profile</a></li>
-                <li><a><img>Messages</a></li>
-                <li><a><img>History</a></li>
-                <li><a><img>Tasks</a></li>
-                <li><a><img>Communities</a></li>
+                <li><label for="home"><img src="static/home.png"></label>
+                    <a id="home">Home</a></li>
+                <li><label for="profile"><img src="static/account-circle-outline.png"></label>
+                    <a id="profile">Profile</a></li>
+                <li><label for="messages"><img src="static/message-reply.png"></label>
+                    <a id="messages">Messages</a></li>
+                <li><label for="history"><img src="static/clock-time-three.png"></label>
+                    <a id="history">History</a></li>
+                <li><label for="tasks"><img src="static/note-multiple.png"></label>
+                    <a id="tasks">Tasks</a></li>
+                <li><label for="communities"><img src="static/account-group.png"></label>
+                    <a id="communities">Communities</a></li>
             </ul>
 
             <ul>
-                <li><a><img>Settings</a></li>
-                <li><a><img>Support</a></li>
-                <li><a><img>Privacy</a></li>
+                <li><label for="settings"><img src="static/cog.png"></label>
+                    <a id="settings">Settings</a></li>
+                <li><label for="support"><img src="static/help-box.png"></label>
+                    <a id="support">Support</a></li>
+                <li><label for="privacy"><img src="static/shield-check.png"></label>
+                    <a id="privacy">Privacy</a></li>
             </ul>
         </div>
 
         <div class="header">
             <div class="topLeft">
-                <img>
+                <img src="static/magnify.png">
                 <input type="text">
             </div>
             <div class="topRight">
-                <img>
-                <img>
+                <img src="static/bell-ring.png">
+                <img src="static/alien-outline (1).png">
                 <a>Morgan Oakley</a>
             </div>
 
             <div class="bottomLeft">
-                <img>
-                <p>Hi there, Morgan Oakley(@morgan)</p>
+                <img src="static/alien-outline.png">
+                <div id="greeting">
+                    <p id="hi">Hi there,</p>
+                    <p id="user">Morgan Oakley(@morgan)</p>
+                </div>
             </div>
             <div class="bottomRight">
                 <button>New</button>
@@ -50,129 +62,147 @@
         </div>
 
         <div class="main">
+            <p class="title" id="yourP">Your Projects</p>
+            <p class="title">Announcements</p>
             <div class="projects">
-                <p class="title">Your Projects</p>
                 <div class="card">
                     <div class="info">
-                        <p>Super Cool Project</p>
+                        <p class="title">Super Cool Project</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="info">
-                        <p>Less Cool Project</p>
+                        <p class="title">Less Cool Project</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div>             
                 </div>
 
                 <div class="card">
                     <div class="info">
-                        <p>Impossible App</p>
+                        <p class="title">Impossible App</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div> 
                 </div>
 
                 <div class="card">
                     <div class="info">
-                        <p>Easy Peasy App</p>
+                        <p class="title">Easy Peasy App</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div>       
                 </div>
 
                 <div class="card">
                     <div class="info">
-                        <p>Ad Blocker</p>
+                        <p class="title">Ad Blocker</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="info">
-                        <p>Money Maker</p>
+                        <p class="title">Money Maker</p>
                         <p>gjrgqlergqergqergqergqergqegqergqergqerg</p>
                     </div>
                     <div class="actions">
-                        <img>
-                        <img>
-                        <img>
+                        <img src="static/star-plus-outline.png">
+                        <img src="static/eye-plus-outline.png">
+                        <img src="static/source-fork.png">
                     </div>
                 </div>
           
             </div>
 
-            <div class="announcements">
-                <p class="title">Announcements</p>
-
-                <div class="announcement">
-                    <p>Site Maintenance</p>
-                    <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
-                </div>
-                <div class="announcement">
-                    <p>Community Share Day</p>
-                    <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
-                </div>
-                <div class="announcement">
-                    <p>Updated Privacy Policy</p>
-                    <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
-                </div>
-
-            </div>
-
-            <div class="trending">
-                <p class="title">Trending</p>
-                <div class="trendingContainer">
-                    <div class="trendingItem">
-                        <img>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
-                    </div>
-
-                    <div class="trendingItem">
-                        <img>
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
-                    </div>
-
-                    <div class="trendingItem">
-                        <img>
-                        <p>@kendall</p>
-                        <p>Life Changing App</p>
-                    </div>
-
-                    <div class="trendingItem">
-                        <img>
-                        <p>@alex</p>
-                        <p>No Traffic Maker</p>
+            <div class="rightBar">
+                <div class="rightBarUpper">
+                    <div class="announcements">
+                        <div class="announcementContainer">
+                            <div class="announcement">
+                                <p id="announcementTitle">Site Maintenance</p>
+                                <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
+                            </div>
+                            <div class="announcement">
+                                <p id="announcementTitle">Community Share Day</p>
+                                <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
+                            </div>
+                            <div class="announcement" id="last">
+                                <p id="announcementTitle">Updated Privacy Policy</p>
+                                <p>gjgjjgjiejgeorlgwjnergwerjngw;rgnw</p>
+                            </div> 
+                        </div>         
                     </div>
                 </div>
+                
+    
+                <div class="rightBarLower">
+                    <div class="trending">
+                        <p class="title" id="trending">Trending</p>
+                        <div class="trendingContainer">
+                            <div class="trendingItem">
+                                <img src="static/alien-outline (1).png">
+                                <div class="trendingItemInfo">
+                                    <p>@tegan</p>
+                                    <p>World Peace Builder</p>
+                                </div>                              
+                            </div>
+        
+                            <div class="trendingItem">
+                                <img src="static/alien-outline (1).png">
+                                <div class="trendingItemInfo">
+                                    <p>@morgan</p>
+                                    <p>Super Cool Project</p>
+                                </div>                           
+                            </div>
+        
+                            <div class="trendingItem">
+                                <img src="static/alien-outline (1).png">
+                                <div class="trendingItemInfo">
+                                    <p>@kendall</p>
+                                    <p>Life Changing App</p>
+                                </div>                               
+                            </div>
+        
+                            <div class="trendingItem">
+                                <img src="static/alien-outline (1).png">
+                                <div class="trendingItemInfo">
+                                    <p>@alex</p>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
             
+
         </div>
     </div>
 </body>

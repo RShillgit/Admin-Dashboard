@@ -1,0 +1,209 @@
+@font-face {
+    font-family: roboto;
+    src: url(static/Roboto/Roboto-Regular.ttf);
+}
+html {
+    font-family: roboto;
+}
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 3;
+    grid-template-rows: 1fr 3fr 5fr;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 15px;
+}
+.sidebar > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sidebar ul {
+    list-style-type: none;
+    display: grid;
+    align-self: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+}
+.sidebar ul > li {
+    padding: 10px;
+}
+.sidebar ul li > label {
+    margin-right: 10px;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+.header .topLeft > input {
+    width: 90%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #eeeeee;
+    border: none;
+}
+.header > .topLeft, .topRight {
+    display: flex;
+}
+.header .topLeft > img {
+    justify-self: center;
+    align-self: center;
+}
+.header > .topRight {
+    justify-content: flex-end;
+}
+.header .topRight > img {
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+}
+.header .topRight > a {
+    justify-self: center;
+    align-self: center;
+}
+.topRight, .bottomLeft{
+    font-weight: 600;
+}
+.bottomLeft {
+    display: flex;
+    gap: 20px;
+}
+.bottomLeft > img {
+    align-self: center;
+    justify-self: center;
+}
+#greeting > #user {
+    font-size: 25px;
+}
+.bottomRight {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.bottomRight > button {
+    background-color: #0ea5e9;
+    color: white;
+    width: 90px;
+    height: 35px;
+    border-radius: 18px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.8fr 10fr;
+    background-color: #eeeeee;
+}
+.title {
+    align-self:flex-end;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.main .card {
+    height: auto;
+    width: auto;
+}
+.projects {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1;
+    gap: 20px;
+}
+.projects > .title {
+    grid-column: 1 / 3;
+}
+#yourP {
+    padding-left: 20px;
+}
+.card {
+    overflow-wrap: break-word;
+    border-left: 5px solid orange;
+    padding: 15px;
+}
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.card, .announcementContainer, .trendingContainer {
+    background-color: white;
+    border-radius: 8px;
+}
+.info {
+    padding: 15px;
+}
+
+.rightBar {
+    padding: 20px;
+    padding-left: 0px;
+}
+.rightBarUpper {
+    padding-bottom: 40px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+.announcement {
+    border-bottom: 1px solid black;
+}
+.announcements #last {
+    border: none;
+}
+.announcementContainer {
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#announcementTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column; 
+}
+.trendingItem {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 15px;
+}
+.trendingItem > img {
+    justify-self: center;
+    align-self: center;
+}
+#trending {
+    align-self: baseline;
+    padding-bottom: 20px;
+}
+
+.card, .announcements, .trendingContainer {
+    box-shadow: 5px 5px 5px lightgray;
+}
